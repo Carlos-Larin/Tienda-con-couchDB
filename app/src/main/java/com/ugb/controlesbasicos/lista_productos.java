@@ -210,10 +210,10 @@ public class lista_productos extends AppCompatActivity {
                     try {
                         String respuesta = db.administrar_productos("eliminar", new String[]{"", "", datosJSON.getJSONObject(posicion).getJSONObject("value").getString("idProducto")});
                         if (respuesta.equals("ok")) {
-                            mostrarMsg("Amigo eliminado con exito");
+                            mostrarMsg("Producto eliminado con exito");
                             obtenerProductos();
                         } else {
-                            mostrarMsg("Error al eliminar el amigo: " + respuesta);
+                            mostrarMsg("Error al eliminar el producto: " + respuesta);
                         }
                     }catch (Exception e){
                         mostrarMsg("Error al eliminar datos: "+ e.getMessage());

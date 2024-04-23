@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lista_productos">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".lista_productos"
+    android:background="#3F51B5"
+    >
 
     <EditText
         android:id="@+id/txtBuscarProductos"
@@ -27,5 +29,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:src="@android:drawable/ic_input_add" />
+        android:backgroundTint="#0CE422"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#974B4B" />
 </RelativeLayout>

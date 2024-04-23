@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3F51B5"
     tools:context=".MainActivity">
 
     <ImageButton
@@ -13,9 +14,21 @@
         android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="127dp"
-        android:layout_marginEnd="134dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="234dp"
         android:src="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/lblFotoObligada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:text="Porfavor poner una foto, sino se crashearea toda la lista, y no mostrara datos"
+        android:textColor="@color/black">
+    </TextView>
 
     <EditText
         android:id="@+id/txtMarca"
@@ -23,8 +36,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnImgProducto"
         android:layout_marginTop="20dp"
+        android:foregroundTint="#CC3E3E"
         android:hint="Marca"
-        android:inputType="text">
+        android:inputType="text"
+        android:shadowColor="#C13939"
+        android:textColor="@color/black">
     </EditText>
 
     <EditText
@@ -34,7 +50,8 @@
         android:layout_below="@+id/txtMarca"
         android:layout_marginTop="20dp"
         android:hint="Descripción"
-        android:inputType="textMultiLine">
+        android:inputType="textMultiLine"
+        android:textColor="@color/black">
     </EditText>
 
     <EditText
@@ -44,7 +61,8 @@
         android:layout_below="@+id/txtDescripcion"
         android:layout_marginTop="20dp"
         android:hint="Presentación"
-        android:inputType="text">
+        android:inputType="text"
+        android:textColor="@color/black">
     </EditText>
 
     <EditText
@@ -54,7 +72,8 @@
         android:layout_below="@+id/txtPresentacion"
         android:layout_marginTop="20dp"
         android:hint="stock"
-        android:inputType="text">
+        android:inputType="number"
+        android:textColor="@color/black">
     </EditText>
 
     <EditText
@@ -63,16 +82,28 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtstock"
         android:layout_marginTop="20dp"
-        android:hint="Precio"
-        android:inputType="text">
+        android:hint="Precio al publico"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtcosto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrecio"
+        android:inputType="numberDecimal"
+        android:hint="Costo del proveedor"
+        android:layout_marginTop="20dp">
     </EditText>
 
     <Button
         android:id="@+id/btnGuardarAgendaAmigos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtPrecio"
+        android:layout_below="@+id/txtcosto"
         android:layout_marginTop="37dp"
+        android:backgroundTint="@color/colorAcent"
         android:text="GUARDAR AMIGO" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -85,6 +116,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#E40C2D"
         android:src="@android:drawable/ic_menu_revert" />
 
 </RelativeLayout>
