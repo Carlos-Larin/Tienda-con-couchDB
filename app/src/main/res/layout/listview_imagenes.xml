@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DA101010">
 
     <androidx.cardview.widget.CardView
         android:layout_width="60dp"
@@ -25,14 +25,14 @@
         android:layout_marginTop="10dp"
         android:shadowColor="#A9EFC0"
         android:text="Marca:"
-        android:textColor="@color/black"
+        android:textColor="#1FE130"
         android:textColorLink="#DC1616"
         android:textSize="18dp" />
 
     <TextView
         android:id="@+id/lblPresentacion"
         android:text="Presentacion:"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="80dp"
         android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
     <TextView
         android:id="@+id/lblPrecioProducto"
         android:text="Precio: $"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="300dp"
         android:layout_width="wrap_content"
